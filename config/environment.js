@@ -1,11 +1,17 @@
 /* eslint-env node */
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'ember-auth',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    'ember-simple-auth': {
+      auth0: {
+        clientID: 'pXZ37CadNtLvjzZAXB7kVwW4JrmosiEP',
+        domain: 'rxbsxn.eu.auth0.com'
+      }
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
