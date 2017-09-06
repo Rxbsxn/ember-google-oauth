@@ -1,1 +1,8 @@
-{{yield}}
+{{#if session.isAuthenticated}}
+  Hello dear {{profileName}}
+  <img src={{profilePict}} class="janusz">
+  <button {{action "logout"}}>Logout</button>
+{{else}}
+  Hello unknown user please log-in
+  <button {{action "login"}}>Login</button>
+{{/if}}
